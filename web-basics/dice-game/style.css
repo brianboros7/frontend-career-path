@@ -1,0 +1,65 @@
+html, body {
+    --color-1: #a8e6ef;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94; 
+    padding: 0; 
+    margin: 0; 
+}
+body {
+    padding-top: 50px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(135deg, var(--color-1), var(--color-2));
+    height: 100vh; 
+    color: black; 
+}
+.container {
+    width: 400px; 
+    margin: 0 auto; 
+    text-align: center; 
+    background-color: white; 
+    padding: 1rem; 
+    border-radius: 1%; 
+}
+.players {
+    width: 100%;
+    display: flex; 
+    justify-content: space-around;
+    padding: 10px 10px; 
+}
+#player1, #player2 {
+    width: 50%; 
+}
+.dice {
+    border-radius: 10px;
+    width: 100px; 
+    height: 100px; 
+    background-color: var(--color-3); 
+    margin: 0 auto; 
+    font-size: 80px; 
+    display: block;
+    align-items: center; 
+    justify-content: center; 
+}
+button {
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 5px; 
+    margin: 20px; 
+    cursor: pointer; 
+}
+#rollBtn {
+    background-color: var(--color-5); 
+}
+#resetBtn { 
+    background-color: var(--color-4);
+}
+button:focus {
+    outline: none; 
+}
+.btnContent {
+    width: 100vw; 
+}
