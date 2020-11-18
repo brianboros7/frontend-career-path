@@ -55,7 +55,6 @@ function move() {
 
 
 
-
     // REmove the last element from the currentSnake array
     const tail = currentSnake.pop()
     console.log(tail)
