@@ -1,11 +1,42 @@
+:root {
+    --project-background: #bd5505; 
+    --project-primary:  #f7b742;
+    --project-font-color:  #FD5602; 
+    --project-contrast: #FFAF42; 
+}
 body {
+    margin: 0;
+    padding: 10px; 
     text-align: center; 
+    background-color: var(--project-background);
+}
+main {
+    display: inline-block; 
+    width: 1360px; 
+    max-width: 1440px; 
+    margin: 0 auto; 
+    text-align: center; 
+    background-color: var(--project-primary);
+    padding: 10px; 
+    color: var(--project-font-color);
+}
+
+.carousel-content {
+    display: inline-block;
+    padding: 10px 20px; 
+}
+.carousel-container {
+    display: inline-block; 
+    padding: 40px; 
+    text-align: center;
+    border: 3px solid var(--project-contrast)
 }
 .carousel {
+    display: inline-block; 
+    border: 10px solid darkseagreen; 
     max-width: 600px;
     position: relative;
 }
-
 .carousel .carousel-item,
 .carousel .carousel-item-hidden {
     display: none;
