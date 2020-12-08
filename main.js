@@ -2,10 +2,11 @@ const webBasicsBtn = document.getElementById('webBasicsBtn')
 const advancedWebBtn = document.getElementById('advanecdWebBtn')
 
 
-const menu = document.querySelector('menu')
+const menu = document.getElementById('menu')
 function toggleDropdown() {
     menu.hidden = !menu.hidden
-    webBasicsBtn.addEventListener("click", function(e) {
+    menu.addEventListener("click", function(e) {
         e.menu.hidden
     })
+    console.log('clicked')
 } 
