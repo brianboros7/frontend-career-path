@@ -69,7 +69,7 @@ nav {
 }
 .menu li  {
     list-style: none;
-    padding: 0.50px 0
+    padding: 0.50px 0; 
 }
 .menu a {
     text-decoration: none;
