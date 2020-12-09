@@ -32,7 +32,7 @@ nav {
 }
 .main-content {
     display: block;
-    padding: 20px 0; 
+    padding: 40px 0; 
 }
 
 .section {
@@ -58,6 +58,7 @@ nav {
     color: var(--font-color);
     border: 1px solid var(--background); 
     text-align: left; 
+    padding: 10px 10px; 
 }
 .project-nav-btns {
     display: block; 
