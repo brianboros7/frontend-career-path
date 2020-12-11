@@ -69,11 +69,21 @@ nav {
     display: inline-block;
     margin-top: 5px;
     border: 1px solid var(--background); 
-    padding: 7.5px 15px; 
+    padding: 7.5px 10px; 
     font-size: 1rem; 
     font-weight: bold;
     color: var(--font-color)
 }
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .menu {
+        padding: 0 550px; 
+    }
+}
+
+
 .menu li  {
     list-style: none;
     width: 200px; 
