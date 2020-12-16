@@ -1,40 +1,94 @@
-body {
-    margin: 0;
-    padding: 40px; 
-    font-family: 'Gill Sans', 'Gill Sans MT';
-    display: flex;
-    justify-content: center;
-    background-color: #5523025e;
+:root {
+    --background: #F3F3F3; 
+    --primary-color: #DE354C;
+    --font-color: #3C1874; 
+    --border-color: #3C1874; 
+}
 
+body {
+    display: grid; 
+    margin: 0;
+    padding: 20px 50px; 
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    background-color: var(--background);
+    justify-content: center; 
+}
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .body {
+        padding: 15px 15px; 
+    }
 }
 main {
     width: 100%;
-    background-color: #ede7e3bd;
-    padding: 60px 200px;
     justify-content: center;
+}
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    main {
+        padding: 20px 20px; 
+    }
 }
 .diary-container {
     display: grid; 
-    background-color: #f7ede7;
+    background-color: var(--primary-color);
     width: 100%; 
     justify-content: center;
     align-items: center;
-    padding: 80px 10px; 
+}
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .diary-container {
+        padding: 10px 4px; 
+    }
+}
+.diary-wrapper { 
+    display: flex; 
+    flex-direction: column;
+    background-color: var(--background);
+}
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .diary-wrapper {
+        padding: 20px 20px; 
+    }
 }
 .title {
-    color: #16697A;
+    color: var(--font-color);
     text-align: center;
     margin-bottom: 1em;
 }
-
+.sibling {
+    padding: 10px 10px; 
+}
+form {
+    width: 100%; 
+}
 .entry-textbox {
+    display: block; 
     background-color: #FFA62B;
-    width: 100%;
     height: 10em;
     padding: 1rem;
     margin-bottom: 0.5em;
     border: unset;
     border-radius: 10%;
+}
+@media screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .entry-textbox {
+        width: 90%; 
+        padding: 5px 5px; 
+    }
 }
 
 .entry-textbox:focus {
@@ -44,17 +98,19 @@ main {
 
 #entryForm .button {
     border: unset;
+    color: var(--font-color); 
+    border: 1px solid var(--border-color); 
     border-radius: 25px;
     padding: 7px 18px;
-    margin-left: 80%; 
+    margin-left: 50%; 
 }
  
  #entries {
      background: #16697A;
-     width: 92%; 
+     overflow: hidden;
      color: #EDE7E3;
      font-family: cursive;
-     padding: 2em;
+     padding: 5px 50px;
      border: unset;
      border-radius: 5%;
      margin-top: 1em;

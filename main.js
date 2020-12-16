@@ -1,4 +1,4 @@
-
+// write a function to toggle web basics and advanced web buttons 
 function showMenu(btn) {
     const menus = document.querySelectorAll('.menu')
     menus.forEach(function(menu) {

@@ -1,5 +1,36 @@
+:root {
+    --background: rgb(0, 59, 109); 
+    --primary-color: #EBEDF3;
+    --font-color: #003B6D; 
+    --border-color: #003B6D; 
+    --contrast-color: #6699CC; 
+}
 body {
     margin: 0;
     padding: 0; 
-    background-color: blue; 
+    background-color: var(--background); 
+    text-align: center;
+}
+main {
+    color: var(--font-color); 
+    display: inline-block;
+    background-color: var(--contrast-color);
+    padding: 10px 10px; 
+}
+.wrapper {
+    background-color: var(--primary-color);
+    padding: 10px 20px; 
+    text-align: left; 
+}
+.emoji-container {
+    padding: 10px 10px; 
+}
+#emoji-input {
+    padding: 4px 4px; 
+}
+.btn {
+    padding: 3px 3px; 
+}
+.btns-wrapper {
+    padding: 10px 0; 
 }

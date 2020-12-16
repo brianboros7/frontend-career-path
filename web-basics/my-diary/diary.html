@@ -15,15 +15,17 @@
     <body>
         <main>
             <section class="diary-container"> 
-                <h1 class="title">My Personal Diary</h1>
-                <form id="entryForm">
-                    <textarea class="entry-textbox" placeholder="Click here to start typing..." required></textarea><br/>
-                    <button type="submit" class="button">Submit</button>
-                </form>
+                <div class="diary-wrapper"> 
+                    <h1 class="title">My Personal Diary</h1>
+                    <form id="entryForm" class="sibling">
+                        <textarea class="entry-textbox" placeholder="Click here to start typing..." required></textarea><br/>
+                        <button type="submit" class="button">Submit</button>
+                    </form>
             
-                <section id="entries">
-                    <div class="entries-nav"></div>
-                </section>
+                    <div id="entries" class="sibling">
+                        <div class="entries-nav"></div>
+                    </div>
+                </div> 
             </section>
         </main>
         
