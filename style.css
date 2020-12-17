@@ -35,7 +35,7 @@ nav {
 /* Main header Mobile */ 
 .main-header {
     display: flex; 
-    padding: 10px 10px; 
+    padding: 10px 10px 0 10px; 
 }
 .image {
     width: 90%; 
@@ -45,32 +45,11 @@ img {
     width: 100%; 
 }
 .content {
-    padding: 5px 10px 0 5px; 
-    font-size: 24px; 
+    padding: 5px 2px 0 5px; 
+    font-size: 20px; 
 }
-/*
-@media only screen  
-    and (min-device-width: 500px) 
-    and (max-device-width: 1200px) 
-    and (-webkit-min-device-pixel-ratio: 1) { 
-        .main-header {
-            display: flex;
-            flex-direction: row; 
-        }
-        .image {
-            width: 40%; 
-        }
-        img {
-            width: 100%; 
-        }
-        .content {
-            font-size: 18px; 
-        }
-    }
-*/ 
 /* Main header Desktop */ 
-
-@media screen 
+@media only screen 
     and (min-device-width: 1200px) 
     and (max-device-width: 1600px) 
     and (-webkit-min-device-pixel-ratio: 1) { 
@@ -81,33 +60,19 @@ img {
             width: 98%; 
             padding: 10px 30px; 
         }
-        img {
+        .image img {
             width: 100%; 
         }
         .content {
             font-size: 60px;  
-            padding: 10px 100px 20px 30px; 
+            padding: 2px 100px 20px 30px; 
         }
-}
-
+    }
 
 /* =========================================================================== */ 
-.section {
-    display: block;
-    width: 100%; 
-    height: 600px;
-    text-align: center;
-}
-.section-content {
-    display: inline-block; 
-    width: 400px; 
-    max-width: 600px; 
-    color: var(--font-color); 
-}
-
 .project-nav {
     display: block; 
-    padding: 20px 20px; 
+    padding: 0 20px; 
     text-align: center;
 }
 .project-nav h3 {
