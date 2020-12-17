@@ -32,7 +32,22 @@ nav {
 }
 .main-content {
     display: block;
-    padding: 40px 0; 
+    padding: 5px 0; 
+}
+.main-header {
+    display: flex; 
+    padding: 10px 10px; 
+}
+.image {
+    width: 98%; 
+    padding: 10px 30px; 
+}
+img {
+    width: 100%; 
+}
+.content {
+    padding: 2.5px 5px; 
+    font-size: 28px; 
 }
 
 .section {
