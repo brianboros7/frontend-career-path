@@ -10,15 +10,12 @@ body {
     background-color: var(--background); 
 }
 main {
-    max-width: 1360px; 
-    margin: 0 auto; 
     color: var(--font-color);
     background-color: var(--primary-color);
-    padding: 10px 29px; 
 }
 header {
     border-bottom: 1px solid var(--border-color); 
-    padding: 20px 0; 
+    padding: 10px 0; 
 }
 nav {
     padding: 20px 0; 
@@ -34,22 +31,67 @@ nav {
     display: block;
     padding: 5px 0; 
 }
+
+/* Main header Mobile */ 
 .main-header {
     display: flex; 
     padding: 10px 10px; 
 }
 .image {
-    width: 98%; 
-    padding: 10px 30px; 
+    width: 90%; 
+    padding: 10px 10px; 
 }
 img {
     width: 100%; 
 }
 .content {
-    padding: 2.5px 5px; 
-    font-size: 28px; 
+    padding: 5px 10px 0 5px; 
+    font-size: 24px; 
+}
+/*
+@media only screen  
+    and (min-device-width: 500px) 
+    and (max-device-width: 1200px) 
+    and (-webkit-min-device-pixel-ratio: 1) { 
+        .main-header {
+            display: flex;
+            flex-direction: row; 
+        }
+        .image {
+            width: 40%; 
+        }
+        img {
+            width: 100%; 
+        }
+        .content {
+            font-size: 18px; 
+        }
+    }
+*/ 
+/* Main header Desktop */ 
+
+@media screen 
+    and (min-device-width: 1200px) 
+    and (max-device-width: 1600px) 
+    and (-webkit-min-device-pixel-ratio: 1) { 
+        .main-header {
+            padding: 20px 40px;  
+        }
+        .image {
+            width: 98%; 
+            padding: 10px 30px; 
+        }
+        img {
+            width: 100%; 
+        }
+        .content {
+            font-size: 60px;  
+            padding: 10px 100px 20px 30px; 
+        }
 }
 
+
+/* =========================================================================== */ 
 .section {
     display: block;
     width: 100%; 
