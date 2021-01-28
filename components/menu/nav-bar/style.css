@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #0e2957;
+    padding: 1em;
+    margin: 0;
+}
+@media screen 
+    and (min-width: 1000px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-around; 
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    margin: 0.5em;
+    transition: all 500ms; 
+}
+.link:hover, .link:focus {
+    color: #fff582; 
+}
+
+.name-input-container {
+    margin: 1em;
+}

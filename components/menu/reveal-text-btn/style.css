@@ -1,0 +1,52 @@
+/* 
+    **Challenge**:
+    Your goal is to create a button that, when clicked, will either show or hide a block of text depending on its previous state. The button should be styled and have a clean transition when hovered over. On top of that, the text of the button should change depending on its feature (eg. "Show" vs "Hide"). You can use your own colors and fonts.
+
+    **Hints:**
+    - Use event listeners
+    - Use a variable to keep track of state
+    - Remember pseudoclasses and transitions for the styling!
+
+    **Topics Covered:**
+    - Transitions
+    - Event listeners
+    - DOM Manipulation
+
+    **Other Information**:
+    - Button text color: #595959
+    - Button border color: #4a4a4a;
+    - Button hover text color: #9a9a9a;
+    - Button hover border color: #ababab;
+
+    **Extended Challenge**:
+    Add a feature to add text to the page with an input.
+*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    background: #dbf4ff;
+}
+
+.reveal-text-btn {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    padding: 0.75em;
+    text-transform: uppercase;
+    color: #2c2c2c;
+    background-color: #d2db4c; 
+    border: 1px solid #4a4a4a;
+    transition: all 200ms;
+    font-weight: 80%; 
+}
+.reveal-text-btn:hover {
+    border: 1px solid #ababab;
+    color: #d2db4c;
+    background-color: #2c2c2c; 
+    font-size: 1.1rem;
+}
